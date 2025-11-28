@@ -1,0 +1,17 @@
+# SECRETS - NE JAMAIS COMMITER !
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

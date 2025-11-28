@@ -1,0 +1,26 @@
+# Configuration sécurisée du déploiement VM
+
+location: "switzerlandnorth"
+
+resource_group:
+  name: "rg-vm-secure"
+
+# Configuration réseau SÉCURISÉE
+network:
+  vnet_name: "vnet-secure"
+  vnet_prefix: "10.0.0.0/16"
+  subnet_name: "subnet-secure"
+  subnet_prefix: "10.0.1.0/24"
+  nsg_name: "nsg-secure"
+
+# VM Configuration
+vm:
+  name: "vm-win-secure"
+  size: "Standard_B1s"
+  
+  # OS Windows Server 2022
+  image:
+    publisher: "MicrosoftWindowsServer"
+    offer: "WindowsServer"
+    sku: "2022-datacenter-azure-edition"
+    version: "latest"
